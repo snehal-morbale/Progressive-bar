@@ -1,0 +1,275 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://s7ap1.scene7.com/is/image/TCSCOMprod/NQT2024-Microsite-Banner-2?wid=1900&hei=749&dpr=off');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif; /* Adding a fallback font */
+}
+
+.wrapper {
+  padding: 4%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  border-radius: 10px; /* Adding rounded corners */
+  max-width: 800px; /* Limiting the width of the form */
+  margin: 50px auto; /* Centering the form horizontally */
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Adding some space below the stepper */
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.form1 {
+  position: relative;
+  padding: 20px; /* Increase padding for better spacing */
+  box-shadow: 5px 5px 5px 5px #f35cee;
+  width: 80%; /* Adjusting width to 80% of the wrapper */
+  left: 10%; /* Centering the form within the wrapper */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px; /* Adding rounded corners */
+}
+
+/* Styling for form elements */
+.form1 label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form1 input[type="text"],
+.form1 input[type="email"],
+.form1 input[type="tel"],
+.form1 input[type="date"],
+.form1 input[type="number"],
+.form1 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  padding: 20px;
+}
+
+.bounce {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Styling for buttons */
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #e540f5;
+}
+
+.btns button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  background-color: #d839f4;
+  color: white;
+}
+
+/* Rest of your existing CSS styles remain unchanged */
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://s7ap1.scene7.com/is/image/TCSCOMprod/NQT2024-Microsite-Banner-2?wid=1900&hei=749&dpr=off');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif; /* Adding a fallback font */
+}
+
+.wrapper {
+  padding: 4%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  border-radius: 10px; /* Adding rounded corners */
+  max-width: 800px; /* Limiting the width of the form */
+  margin: 50px auto; /* Centering the form horizontally */
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Adding some space below the stepper */
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  position: relative;
+}
+
+.step span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f057cf;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease-in-out; /* Adding transition for smoother color change */
+}
+
+.step p {
+  margin: 0;
+}
+
+.step.active span {
+  background-color: #28a745;
+}
+
+.step.completed span {
+  background-color: #28a745;
+}
+
+/* Animation for active step */
+.step.active:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #28a745;
+  z-index: -1;
+}
+
+/* Animation for completed steps */
+.step.completed:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #28a745;
+  z-index: -1;
+}
+
+/* Rest of your existing CSS styles remain unchanged */
+/* PreviewPage.css */
+
+.wrapper {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-content {
+  padding: 20px 0;
+}
+
+.user-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-image {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.preview-table td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.section-header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #db4bf5;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #eb4ffc;
+}
+
+.bounce {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

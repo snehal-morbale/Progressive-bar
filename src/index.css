@@ -1,0 +1,49 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://s7ap1.scene7.com/is/image/TCSCOMprod/NQT2024-Microsite-Banner-2?wid=1900&hei=749&dpr=off');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif; /* Adding a fallback font */
+}
+
+.wrapper {
+  padding: 4%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  border-radius: 10px; /* Adding rounded corners */
+  max-width: 800px; /* Limiting the width of the form */
+  margin: 50px auto; /* Centering the form horizontally */
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Adding some space below the stepper */
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.form1 {
+  position: relative;
+  padding: 20px; /* Increase padding for better spacing */
+  box-shadow: 5px 5px 5px 5px #e22cef;
+  width: 50%; /* Adjusting width to 80% of the wrapper */
+  left: 10%; /* Centering the form within the wrapper */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px; /* Adding rounded corners */
+  height: 15%;
+}
+
+/* Rest of your existing CSS styles remain unchanged */
